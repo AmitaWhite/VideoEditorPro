@@ -12,6 +12,7 @@
 1. 기존 개발 요소
 
 ( 단, 코드 리팩토링 진행 )
+
 - 비디오 업로드
 - 비디오 재선택
 - 영상 길이 조절
@@ -30,7 +31,6 @@
   - 변환, 추출 최적화 (실행시간)
   - 압축 코덱 (용량)
 
-
 [3] 사용 라이브러리 명세
 
 - 디자인 : Chakra UI
@@ -39,8 +39,8 @@
   - FFmpeg : 비디오 웹 변환
   - react-video : 비디오 재생
 
-
 [4] 커밋 메세지 Rule : ['commit tag'] "commit message"
+
 - feat : 새로운 기능 추가
 - fix : 버그 수정
 - docs : 문서의 수정
@@ -51,20 +51,18 @@
 - storybook: 스토리북 관련 추가, 수정
 
 [4] Naming Convention
-- 컴포넌트 정의 : Pascal Case
-  1) 명사 only
-- 함수 정의 : camel Case
-  1) 
-- hooks  : 'use-' as prefix
 
+- 컴포넌트 정의 : Pascal Case
+  1. 명사 only
+- 함수 정의 : camel Case
+  1.
+- hooks : 'use-' as prefix
 
 [5] Dir 구조
 '- src
-  |- pages/
-  |- components/
-    |- common/
-  |- hooks/
-  |- assets/
+|- pages/
+|- components/
+|- common/
+|- hooks/
+|- assets/
 '
-
-
