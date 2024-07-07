@@ -6,6 +6,8 @@
   - 단, 디자인 코드 부분 정리 필요(라이브러리 통일)
 - CSS : Sass 사용 (https://sass-lang.com/guide/)
   - index.sass
+- 기본 화면 사이즈
+  - 태블릿 : 768 * 667 (default) 
 
 [2] 기능
 
@@ -34,6 +36,7 @@
 [3] 사용 라이브러리 명세
 
 - 디자인 : Chakra UI
+  - icon : react-icon
 - Build, Bundling : React + Vite
 - 외부 기능 라이브러리
   - FFmpeg : 비디오 웹 변환
