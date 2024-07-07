@@ -1,17 +1,28 @@
 import { CiLight } from "react-icons/ci";
 import { PiMoonThin } from "react-icons/pi";
-import { useColorMode } from "@chakra-ui/react";
+import { Flex, Text, useColorMode } from "@chakra-ui/react";
 
 const Header = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
-    <header className={`flex justify-between items-center`}>
-      <p className="font-thin text-xl">VIDEO EDITOR</p>
-      {colorMode === "dark" ? (
-        <CiLight size={`24px`} onClick={toggleColorMode} />
-      ) : (
-        <PiMoonThin size={`24px`} onClick={toggleColorMode} />
-      )}
+    <header className="bgGray">
+      <Flex
+        align="center"
+        justify="space-between"
+        px="2"
+        py="1"
+        bg="#EDF2F7"
+        _dark={{ background: "#ffffff14" }}
+      >
+        <Text fontSize="xl" fontWeight="thin">
+          VIDEO EDITOR
+        </Text>
+        {colorMode === "dark" ? (
+          <CiLight size={`24px`} onClick={toggleColorMode} />
+        ) : (
+          <PiMoonThin size={`24px`} onClick={toggleColorMode} />
+        )}
+      </Flex>
     </header>
   );
 };
