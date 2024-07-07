@@ -1,37 +1,35 @@
-import { Grid } from "@chakra-ui/react";
+import { Grid, useColorMode } from "@chakra-ui/react";
 import { PiGifThin, PiFileVideoThin } from "react-icons/pi";
 import { GiSoundWaves } from "react-icons/gi";
 import styled from "@emotion/styled";
-import { css } from "@emotion/react";
-
-const purpleBg = css`
-  background: purple;
-`;
-
-const VideoButton = styled.button({
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-  padding: "16px",
-  background: "#ffffff14",
-  borderRadius: "8px",
-});
-
-const IconArea = styled.div({
-  display: "flex",
-  alignItems: "center",
-  height: "40px",
-  width: "40px",
-  justifyContent: "center",
-  borderRadius: "100px",
-  color: "#fff",
-  marginBottom: "8px",
-});
 
 const VideoBtnArea = (): JSX.Element => {
+  const { colorMode } = useColorMode();
+
+  const VideoButton = styled.button({
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    padding: "16px",
+    background: colorMode === "dark" ? "#ffffff14" : "#F7FAFC",
+    borderRadius: "8px",
+  });
+
+  const IconArea = styled.div({
+    display: "flex",
+    alignItems: "center",
+    height: "40px",
+    width: "40px",
+    justifyContent: "center",
+    borderRadius: "100px",
+    color: "#fff",
+    marginBottom: "8px",
+  });
+
   return (
     <section className="ma-2">
       <Grid gap={2} gridTemplateColumns="repeat(3, minmax(0, 1fr))" mt="2">
+        {/* <VideoButton _dark={{ background: #F7FAFC }}> */}
         <VideoButton>
           <IconArea className="orangeBg">
             <PiGifThin size={`28px`} />

@@ -11,7 +11,7 @@ const Header = () => {
         justify="space-between"
         px="2"
         py="1"
-        bg="#EDF2F7"
+        bg="#F7FAFC"
         _dark={{ background: "#ffffff14" }}
       >
         <Text fontSize="xl" fontWeight="thin">
